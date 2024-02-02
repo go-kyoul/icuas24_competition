@@ -5,8 +5,8 @@ control:
 
   ff_gain:
     velocity:
-      x: 1.0
-      y: 1.0
+      x: 0.8
+      y: 0.8
       z: 1.0
     acceleration:
       x: 0.0
@@ -24,8 +24,8 @@ control:
     kp: 0.25
     ki: 0.01
     kd: 0.0
-    lim_low: -0.4
-    lim_high: 0.4  
+    lim_low: -0.8
+    lim_high: 0.8  
 
   pos_y:
     kp: 1.05
@@ -38,8 +38,8 @@ control:
     kp: 0.25
     ki: 0.01
     kd: 0.0
-    lim_low: -0.4
-    lim_high: 0.4 
+    lim_low: -0.5
+    lim_high: 0.5
 
   pos_z:
     kp: 1.5
@@ -52,12 +52,12 @@ control:
     kp: 0.3
     ki: 0.0
     kd: 0.0
-    lim_low: -0.5
-    lim_high: 0.5
+    lim_low: -0.8
+    lim_high: 0.8
   
   yaw_rate:
-    kp: 1.75
+    kp: 1.8
     ki: 0.0
     kd: 0.1
-    lim_low: -20
-    lim_high: 20
+    lim_low: -40
+    lim_high: 40

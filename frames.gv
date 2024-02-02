@@ -1,0 +1,29 @@
+digraph G {
+"red/base_link" -> "red/base_link_inertia"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 105028.440 sec old)\nBuffer length: 0.000 sec\n"];
+"world" -> "red/base_link"[label="Broadcaster: /gazebo\nAverage rate: 50.217 Hz\nMost recent transform: 105028.439 ( 0.001 sec old)\nBuffer length: 4.600 sec\n"];
+"red/camera_box" -> "red/camera"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 105028.440 sec old)\nBuffer length: 0.000 sec\n"];
+"red/base_link" -> "red/camera_box"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 105028.440 sec old)\nBuffer length: 0.000 sec\n"];
+"map" -> "map_ned"[label="Broadcaster: /red/mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 105028.440 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "odom_ned"[label="Broadcaster: /red/mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 105028.440 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_link_frd"[label="Broadcaster: /red/mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 105028.440 sec old)\nBuffer length: 0.000 sec\n"];
+"red/base_link" -> "red/rotor_0"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 50.011 Hz\nMost recent transform: 105028.417 ( 0.023 sec old)\nBuffer length: 4.579 sec\n"];
+"red/base_link" -> "red/rotor_1"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 50.011 Hz\nMost recent transform: 105028.417 ( 0.023 sec old)\nBuffer length: 4.579 sec\n"];
+"red/base_link" -> "red/rotor_2"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 50.011 Hz\nMost recent transform: 105028.417 ( 0.023 sec old)\nBuffer length: 4.579 sec\n"];
+"red/base_link" -> "red/rotor_3"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 50.011 Hz\nMost recent transform: 105028.417 ( 0.023 sec old)\nBuffer length: 4.579 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 105028.440"[ shape=plaintext ] ;
+ }->"map";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 105028.440"[ shape=plaintext ] ;
+ }->"odom";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 105028.440"[ shape=plaintext ] ;
+ }->"base_link";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 105028.440"[ shape=plaintext ] ;
+ }->"world";
+}
